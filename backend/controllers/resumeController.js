@@ -4,17 +4,10 @@ const analyze = async (req, res) => {
   try {
     const { resumeText } = req.body;
 
-    console.log("Resume request received");
-console.log("Resume text:", resumeText?.substring(0, 100));
+    console.log("Resume analysis request received");
+    console.log("Resume text sample:", (resumeText || "").substring(0, 100));
 
-let result = await analyzeResume(resumeText);
-
-    result = result
-      .replace(/```json/g, "")
-      .replace(/```/g, "")
-      .trim();
-
-    result = JSON.parse(result);
+    const result = await analyzeResume(resumeText);
 
     res.json({
       success: true,
@@ -22,11 +15,11 @@ let result = await analyzeResume(resumeText);
     });
 
   } catch (err) {
-    console.log(err);
+    console.error("Resume Controller Error:", err);
 
     res.status(500).json({
       success: false,
-      message: err.message,
+      message: err.message || "Failed to analyze resume",
     });
   }
 };
