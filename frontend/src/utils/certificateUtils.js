@@ -1,6 +1,7 @@
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 import { getUser, getUserData, saveUserData } from "./storage";
+import { API_BASE_URL } from "../config";
 
 /**
  * Calculates Grade and Performance Badge based on Overall Score (0 - 10)
@@ -68,7 +69,7 @@ export const fetchCertificates = async (userEmail) => {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/certificates/user/${encodeURIComponent(targetEmail)}`
+      `${API_BASE_URL}/certificates/user/${encodeURIComponent(targetEmail)}`
     );
 
     if (response.ok) {
@@ -148,7 +149,7 @@ export const saveCertificate = async (certData) => {
       interviewType: certData.interviewType || "AI",
     };
 
-    const res = await fetch("http://localhost:5000/api/certificates/save", {
+    const res = await fetch(`${API_BASE_URL}/certificates/save`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),

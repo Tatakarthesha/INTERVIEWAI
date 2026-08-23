@@ -4,6 +4,7 @@ import { aptitudeQuestions } from "../../data/aptitudeQuestions";
 import "./Aptitude.css";
 import { saveUserData, saveInterviewRecord } from "../../utils/storage";
 import Navbar from "../../components/Navbar";
+import { API_BASE_URL } from "../../config";
 const Aptitude = () => {
   const navigate = useNavigate();
 
@@ -138,7 +139,7 @@ const Aptitude = () => {
   // Save into MongoDB
   try {
     const response = await fetch(
-      "http://localhost:5000/api/interview/save",
+      `${API_BASE_URL}/interview/save`,
       {
         method: "POST",
         headers: {

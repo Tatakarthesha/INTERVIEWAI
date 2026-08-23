@@ -4,6 +4,7 @@ import { technicalQuestions } from "../../data/questions";
 import { getUserData, saveUserData, saveInterviewRecord } from "../../utils/storage";
 import Navbar from "../../components/Navbar";
 import "./TechnicalInterview.css";
+import { API_BASE_URL } from "../../config";
 
 const TechnicalInterview = () => {
   const navigate = useNavigate();
@@ -168,7 +169,7 @@ saveInterviewRecord({
     );
 try {
   await fetch(
-    "http://localhost:5000/api/interview/save",
+    `${API_BASE_URL}/interview/save`,
     {
       method: "POST",
       headers: {

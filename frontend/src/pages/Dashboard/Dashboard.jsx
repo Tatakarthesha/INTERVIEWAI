@@ -8,6 +8,7 @@ import {
   saveUserData,
   calculateLocalStats,
 } from "../../utils/storage";
+import { API_BASE_URL } from "../../config";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Dashboard = () => {
 
       try {
         const response = await fetch(
-          `http://localhost:5000/api/interview/dashboard/${user.email}`
+          `${API_BASE_URL}/interview/dashboard/${user.email}`
         );
         if (!response.ok) return;
         const data = await response.json();

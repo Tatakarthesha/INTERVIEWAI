@@ -5,6 +5,7 @@ import { evaluateAnswer } from "../../services/aiService";
 import "./AIMockInterview.css";
 import { getUserData, saveUserData, saveInterviewRecord } from "../../utils/storage";
 import Navbar from "../../components/Navbar";
+import { API_BASE_URL } from "../../config";
 const AIMockInterview = () => {
   const navigate = useNavigate();
 
@@ -148,7 +149,7 @@ console.log("Questions:", mockQuestions[branch]);
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/interview/save",
+      `${API_BASE_URL}/interview/save`,
       {
         method: "POST",
         headers: {
