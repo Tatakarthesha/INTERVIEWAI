@@ -1,0 +1,141 @@
+.aptitude-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e1b4b
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 40px 0;
+}
+
+.aptitude-card {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.aptitude-card h1 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 38px;
+}
+
+.attempt-text {
+  text-align: center;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.progress-container {
+  margin-bottom: 30px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  height: 12px;
+  background: #334155;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #8b5cf6
+  );
+  border-radius: 20px;
+}
+
+.question-box {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.question-number {
+  color: #60a5fa;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.question-box h2 {
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option-label {
+  background: rgba(255,255,255,0.08);
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+.option-label:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.option-label input {
+  margin-right: 12px;
+}
+
+.next-btn,
+.submit-btn {
+  width: 100%;
+  margin-top: 30px;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.next-btn {
+  background: linear-gradient(
+    90deg,
+    #3b82f6,
+    #8b5cf6
+  );
+}
+
+.submit-btn {
+  background: #22c55e;
+}
+
+.next-btn:hover,
+.submit-btn:hover {
+  transform: translateY(-2px);
+
+}
+
+.selected-option {
+  background: #2563eb;
+  border: 2px solid #60a5fa;
+  color: white;
+}

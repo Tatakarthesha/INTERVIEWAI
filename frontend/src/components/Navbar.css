@@ -1,0 +1,130 @@
+.app-header {
+  width: 100%;
+  padding: 12px 28px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-bottom: 24px;
+}
+
+.app-navbar {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.2s ease;
+}
+
+.nav-brand:hover {
+  opacity: 0.9;
+}
+
+.nav-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #173943;
+  letter-spacing: -0.3px;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  font-family: "Poppins", "Inter", sans-serif;
+}
+
+.dashboard-btn-link {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.dashboard-btn-link:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.cert-btn-link {
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #bfdbfe;
+}
+
+.cert-btn-link:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+.login-btn-link,
+.signup-btn-link {
+  background: #2563eb;
+  color: white;
+}
+
+.login-btn-link:hover,
+.signup-btn-link:hover {
+  background: #1d4ed8;
+}
+
+@media (max-width: 640px) {
+  .app-header {
+    padding: 10px 16px;
+    margin-bottom: 16px;
+  }
+
+  .nav-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+  }
+
+  .nav-title {
+    font-size: 18px;
+  }
+
+  .nav-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+}

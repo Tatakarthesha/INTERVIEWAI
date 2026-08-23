@@ -1,0 +1,189 @@
+.tech-result-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 50%, #e2e8f0 100%);
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tech-result-card{
+
+    width:100%;
+    max-width:1150px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.tech-result-card h1{
+
+    text-align:center;
+
+    color:#2563eb;
+
+    margin-bottom:40px;
+
+    font-size:42px;
+
+}
+
+.tech-score-card{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.tech-score-item{
+
+    background:#eff6ff;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.tech-score-item h2{
+
+    font-size:42px;
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.tech-score-item p{
+
+    font-size:18px;
+
+    color:#475569;
+
+}
+
+.review-title{
+
+    text-align:center;
+
+    font-size:36px;
+
+    color:#111827;
+
+    margin-bottom:35px;
+
+}
+
+.tech-answer-card{
+
+    background:#f8fafc;
+
+    border-left:8px solid #2563eb;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+}
+
+.tech-answer-card h3{
+
+    color:#1e3a8a;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.tech-answer-card p{
+
+    color:#374151;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.tech-dashboard-btn{
+
+    display:block;
+
+    margin:40px auto 0;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2c5597;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.tech-dashboard-btn:hover{
+
+    background:#2c5597;
+
+    transform:scale(1.05);
+
+}
+
+@media(max-width:900px){
+
+.tech-score-card{
+
+grid-template-columns:1fr;
+
+}
+
+.tech-result-card{
+
+padding:20px;
+
+}
+
+.tech-result-card h1{
+
+font-size:30px;
+
+}
+
+.review-title{
+
+font-size:28px;
+
+}
+
+.tech-answer-card h3{
+
+font-size:20px;
+
+}
+
+}

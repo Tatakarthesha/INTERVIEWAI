@@ -1,0 +1,498 @@
+/* Certificate Component Styling */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap');
+
+.certificate-outer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Certificate container fixed aspect ratio suitable for A4 Landscape (1.414 ratio) */
+.certificate-container {
+  width: 960px;
+  min-height: 675px;
+  background: linear-gradient(135deg, #ffffff 0%, #fdfbf7 50%, #f9f6f0 100%);
+  color: #1e293b;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+/* Corner Ornaments */
+.corner-ornament {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  border-color: #d97706;
+  border-style: solid;
+  z-index: 5;
+}
+
+.top-left {
+  top: 12px;
+  left: 12px;
+  border-width: 3px 0 0 3px;
+}
+
+.top-right {
+  top: 12px;
+  right: 12px;
+  border-width: 3px 3px 0 0;
+}
+
+.bottom-left {
+  bottom: 12px;
+  left: 12px;
+  border-width: 0 0 3px 3px;
+}
+
+.bottom-right {
+  bottom: 12px;
+  right: 12px;
+  border-width: 0 3px 3px 0;
+}
+
+/* Double Border Frame */
+.certificate-border {
+  border: 2px solid #1e3a8a;
+  padding: 6px;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.certificate-inner {
+  border: 1px dashed #d97706;
+  padding: 24px 36px;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: radial-gradient(circle at center, #ffffff 60%, #faf8f5 100%);
+  position: relative;
+}
+
+/* Header */
+.certificate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f3f4f6;
+  padding-bottom: 12px;
+}
+
+.brand-logo-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.cert-logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-name {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: #1e3a8a;
+  letter-spacing: 1px;
+}
+
+.brand-tagline {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cert-id-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background: #f1f5f9;
+  padding: 6px 14px;
+  border-radius: 6px;
+  border-left: 3px solid #1e3a8a;
+}
+
+.id-label {
+  font-size: 9px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 1px;
+}
+
+.id-value {
+  font-family: monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+/* Main Heading */
+.certificate-title-section {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.cert-main-heading {
+  font-family: 'Cinzel', serif;
+  font-size: 32px;
+  font-weight: 800;
+  color: #1e3a8a;
+  letter-spacing: 3px;
+  margin: 0;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 50%, #b45309 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 8px 0;
+}
+
+.divider-line {
+  height: 1px;
+  width: 120px;
+  background: linear-gradient(to right, transparent, #d97706, transparent);
+}
+
+.divider-star {
+  color: #d97706;
+  font-size: 14px;
+}
+
+.cert-sub-text {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #64748b;
+  margin: 4px 0 0 0;
+}
+
+/* Candidate Name */
+.candidate-name-section {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.candidate-name {
+  font-family: 'Cinzel', serif;
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.name-underline {
+  height: 2px;
+  width: 320px;
+  background: linear-gradient(to right, transparent, #1e3a8a, #d97706, #1e3a8a, transparent);
+  margin: 6px auto 0 auto;
+}
+
+/* Body Text */
+.cert-body-text {
+  text-align: center;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.5;
+  margin: 4px 0;
+}
+
+.cert-body-text p {
+  margin: 0 0 4px 0;
+}
+
+.course-domain-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.domain-highlight {
+  color: #b45309;
+  font-weight: 800;
+}
+
+/* Performance Grid */
+.performance-card-grid {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin: 14px 0;
+}
+
+.perf-item {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 20px;
+  min-width: 140px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.score-item {
+  border-top: 3px solid #2563eb;
+}
+
+.grade-item {
+  border-top: 3px solid #16a34a;
+}
+
+.badge-item {
+  border-top: 3px solid #d97706;
+}
+
+.perf-label {
+  font-size: 10px;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+}
+
+.perf-val-primary {
+  font-size: 22px;
+  font-weight: 800;
+  color: #2563eb;
+}
+
+.perf-val-sub {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.perf-val-grade {
+  font-size: 24px;
+  font-weight: 800;
+  color: #16a34a;
+}
+
+.perf-val-badge {
+  font-size: 15px;
+  font-weight: 700;
+  color: #b45309;
+}
+
+/* Verification Line */
+.verification-text {
+  text-align: center;
+  font-size: 11px;
+  color: #047857;
+  font-weight: 600;
+  background: #ecfdf5;
+  padding: 4px 16px;
+  border-radius: 20px;
+  width: fit-content;
+  margin: 0 auto;
+  border: 1px solid #a7f3d0;
+}
+
+/* Footer Section */
+.certificate-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.date-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.meta-pair {
+  display: flex;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.meta-label {
+  color: #64748b;
+  font-weight: 600;
+}
+
+.meta-val {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+/* Stamp / Seal */
+.seal-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.official-seal {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seal-outer-ring {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d97706 0%, #b45309 50%, #78350f 100%);
+  padding: 3px;
+  box-shadow: 0 4px 10px rgba(180, 83, 9, 0.3);
+}
+
+.seal-inner-circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 1px dashed #fef3c7;
+  background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fbbf24;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+.seal-star {
+  font-size: 8px;
+}
+
+.seal-text-top {
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.seal-text-center {
+  font-size: 10px;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin: 1px 0;
+}
+
+.seal-text-bottom {
+  font-size: 6px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* Signature */
+.sig-col {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.digital-signature-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.sig-handwriting {
+  font-family: 'Great Vibes', cursive, sans-serif;
+  font-size: 26px;
+  color: #1e3a8a;
+  margin-bottom: -4px;
+}
+
+.sig-line {
+  width: 100%;
+  height: 1px;
+  background: #94a3b8;
+  margin-bottom: 4px;
+}
+
+.sig-title {
+  font-size: 10px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.sig-sub {
+  font-size: 8px;
+  color: #64748b;
+}
+
+/* Responsive adjustments for display on mobile/small screens */
+@media (max-width: 992px) {
+  .certificate-container {
+    width: 100%;
+    min-height: auto;
+    padding: 16px;
+  }
+
+  .certificate-inner {
+    padding: 16px;
+  }
+
+  .cert-main-heading {
+    font-size: 24px;
+  }
+
+  .candidate-name {
+    font-size: 26px;
+  }
+
+  .performance-card-grid {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .perf-item {
+    padding: 6px 12px;
+    min-width: 100px;
+  }
+
+  .certificate-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .sig-col, .date-col {
+    justify-content: center;
+    text-align: center;
+  }
+}

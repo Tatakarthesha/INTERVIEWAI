@@ -1,0 +1,189 @@
+.hr-result-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #fce7f3 50%, #f1f5f9 100%);
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hr-result-card{
+
+    width:100%;
+    max-width:1150px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.hr-result-card h1{
+
+    text-align:center;
+
+    color:#ec4899;
+
+    margin-bottom:40px;
+
+    font-size:42px;
+
+}
+
+.hr-score-card{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+    margin-bottom:40px;
+
+}
+
+.hr-score-item{
+
+    background:#fdf2f8;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    text-align:center;
+
+}
+
+.hr-score-item h2{
+
+    font-size:42px;
+
+    color:#ec4899;
+
+    margin-bottom:10px;
+
+}
+
+.hr-score-item p{
+
+    font-size:18px;
+
+    color:#475569;
+
+}
+
+.hr-review-title{
+
+    text-align:center;
+
+    font-size:36px;
+
+    color:#111827;
+
+    margin-bottom:35px;
+
+}
+
+.hr-answer-card{
+
+    background:#f8fafc;
+
+    border-left:8px solid #ec4899;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+}
+
+.hr-answer-card h3{
+
+    color:#be185d;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.hr-answer-card p{
+
+    color:#374151;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+.hr-dashboard-btn{
+
+    display:block;
+
+    margin:40px auto 0;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:rgba(225, 11, 47, 0.5);
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.hr-dashboard-btn:hover{
+
+    background:rgba(225, 11, 47, 0.5);
+
+    transform:scale(1.05);
+
+}
+
+@media(max-width:900px){
+
+.hr-score-card{
+
+grid-template-columns:1fr;
+
+}
+
+.hr-result-card{
+
+padding:20px;
+
+}
+
+.hr-result-card h1{
+
+font-size:30px;
+
+}
+
+.hr-review-title{
+
+font-size:28px;
+
+}
+
+.hr-answer-card h3{
+
+font-size:20px;
+
+}
+
+}

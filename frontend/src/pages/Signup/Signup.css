@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+body{
+    background:#f7fafc;
+}
+
+.signup-page{
+    display:flex;
+    min-height:100vh;
+    background:#f7fafc;
+}
+
+/* ==========================
+   LEFT PANEL
+========================== */
+
+.signup-left-panel{
+    flex:1;
+    padding:70px;
+    background:#f8fafc;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.signup-brand{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.signup-logo{
+    width:70px;
+    height:70px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.signup-brand h1{
+    font-size:40px;
+    color:#173943;
+    font-weight:700;
+}
+
+.signup-badge{
+    display:inline-block;
+    width:max-content;
+    padding:8px 18px;
+    border-radius:30px;
+    background:#dbeafe;
+    color:#2563eb;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.signup-left-panel h2{
+    font-size:52px;
+    line-height:1.2;
+    color:#173943;
+    margin-bottom:20px;
+}
+
+.signup-tagline{
+    max-width:560px;
+    color:#64748b;
+    line-height:1.8;
+    font-size:18px;
+    margin-bottom:40px;
+}
+
+
+/* ==========================
+   RIGHT PANEL
+========================== */
+
+.signup-right-panel{
+    width:500px;
+    background:#ffffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    border-left:1px solid #e2e8f0;
+}
+
+.signup-form{
+    width:100%;
+    max-width:380px;
+}
+
+.signup-form-logo{
+    width:80px;
+    display:block;
+    margin:auto;
+    margin-bottom:20px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.signup-form h2{
+    text-align:center;
+    font-size:36px;
+    color:#173943;
+    margin-bottom:10px;
+    font-weight:700;
+}
+
+.signup-subtitle{
+    text-align:center;
+    color:#64748b;
+    margin-bottom:35px;
+    font-size:16px;
+    line-height:1.6;
+}
+
+.signup-form form{
+    width:100%;
+}
+
+.signup-form input{
+    width:100%;
+    padding:16px;
+    margin-bottom:18px;
+    border:1px solid #cbd5e1;
+    border-radius:12px;
+    background:#f8fafc;
+    font-size:15px;
+    outline:none;
+    transition:.3s;
+}
+
+.signup-form input:focus{
+    border-color:#173943;
+    background:#ffffff;
+    box-shadow:0 0 0 3px rgba(23,57,67,.08);
+}
+
+.signup-form button{
+    width:100%;
+    padding:16px;
+    border:none;
+    border-radius:12px;
+    background:#173943;
+    color:#ffffff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.signup-form button:hover{
+    background:#20505d;
+    transform:translateY(-2px);
+}
+
+.signup-login-text{
+    margin-top:22px;
+    text-align:center;
+    color:#64748b;
+    font-size:15px;
+}
+
+.signup-login-text a{
+    color:#173943;
+    text-decoration:none;
+    font-weight:700;
+}
+
+.signup-login-text a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:900px){
+
+    .signup-page{
+        flex-direction:column;
+    }
+
+    .signup-left-panel{
+        padding:40px 25px;
+    }
+
+    .signup-left-panel h2{
+        font-size:38px;
+    }
+
+    .signup-right-panel{
+        width:100%;
+        border-left:none;
+        border-top:1px solid #e2e8f0;
+        padding:35px 20px;
+    }
+
+    .signup-form{
+        max-width:100%;
+    }
+
+    .journey-box{
+        margin-top:30px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .signup-brand{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+    .signup-brand h1{
+        font-size:30px;
+    }
+
+    .signup-left-panel h2{
+        font-size:30px;
+    }
+
+    .signup-tagline{
+        font-size:16px;
+    }
+
+    .journey-circle{
+        width:42px;
+        height:42px;
+        min-width:42px;
+        font-size:16px;
+    }
+
+    .journey-text h4{
+        font-size:17px;
+    }
+
+    .journey-text p{
+        font-size:14px;
+    }
+
+    .signup-form h2{
+        font-size:30px;
+    }
+
+    .signup-form-logo{
+        width:70px;
+    }
+
+}

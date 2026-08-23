@@ -1,0 +1,215 @@
+.apt-result-page {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f8fafc 0%, #eff6ff 50%, #e2e8f0 100%);
+    padding: 0 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apt-result-card{
+
+    width:100%;
+    max-width:1150px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.apt-result-card h1{
+
+    text-align:center;
+
+    color:#2563eb;
+
+    margin-bottom:40px;
+
+    font-size:42px;
+
+}
+
+.apt-score-card{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    margin-bottom:40px;
+
+}
+
+.apt-score-item{
+
+    background:#eff6ff;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    text-align:center;
+
+}
+
+.apt-score-item h2{
+
+    font-size:40px;
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.apt-score-item p{
+
+    font-size:18px;
+
+    color:#475569;
+
+}
+
+.apt-review-title{
+
+    text-align:center;
+
+    font-size:34px;
+
+    margin-bottom:35px;
+
+    color:#111827;
+
+}
+
+.apt-answer-card{
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+}
+
+.correct-card{
+
+    background:#ecfdf5;
+
+    border-left:8px solid #22c55e;
+
+}
+
+.wrong-card{
+
+    background:#fef2f2;
+
+    border-left:8px solid #ef4444;
+
+}
+
+.apt-answer-card h3{
+
+    margin-bottom:15px;
+
+    color:#111827;
+
+    font-size:22px;
+
+}
+
+.apt-answer-card p{
+
+    font-size:18px;
+
+    margin-bottom:10px;
+
+    color:#374151;
+
+}
+
+.correct-text{
+
+    color:#16a34a;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.wrong-text{
+
+    color:#dc2626;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+}
+
+.apt-dashboard-btn{
+
+    display:block;
+
+    margin:40px auto 0;
+
+    padding:15px 40px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#22c55e;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.apt-dashboard-btn:hover{
+
+    background:#16a34a;
+
+    transform:scale(1.05);
+
+}
+
+@media(max-width:900px){
+
+.apt-score-card{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+.apt-result-card{
+
+padding:20px;
+
+}
+
+.apt-result-card h1{
+
+font-size:30px;
+
+}
+
+.apt-review-title{
+
+font-size:28px;
+
+}
+
+}
